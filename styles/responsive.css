@@ -1,0 +1,150 @@
+/* Smell Me - Haute Parfumerie & Olfactory Art
+   Responsive Stylesheet */
+
+@media (max-width: 1200px) {
+  .fragrance-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .craftsmanship-grid, .reviews-track-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-stats-row {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-stage {
+    margin-top: 20px;
+  }
+
+  .layering-selection-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .layering-alchemy-center {
+    margin: 10px 0;
+  }
+
+  .quickview-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .qv-bottle-img {
+    height: 280px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-flacon-img {
+    max-width: 300px;
+  }
+
+  .hero-spray-trigger-card {
+    position: static;
+    margin: 20px auto 0;
+    max-width: 280px;
+  }
+
+  .fragrance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .craftsmanship-grid, .reviews-track-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-result-card {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-content-body {
+    padding: 24px;
+  }
+
+  .synthesis-cta-row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .price-strike-wrap {
+    justify-content: center;
+  }
+
+  .vip-form-wrap {
+    flex-direction: column;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .toast-notification {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+}

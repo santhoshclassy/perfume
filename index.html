@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Meta Tags -->
+  <title>Smell Me — Haute Parfumerie & Artisanal Fragrances</title>
+  <meta name="title" content="Smell Me — Haute Parfumerie & Artisanal Fragrances" />
+  <meta name="description" content="Discover Smell Me: A luxury fragrance house crafting high-concentration extraits de parfum, rare oud woods, romantic rose essences, and bespoke olfactory layering." />
+  <meta name="keywords" content="Smell Me, luxury perfume, haute parfumerie, niche fragrances, oud perfume, signature scent, scent quiz, perfume layering" />
+  <meta name="theme-color" content="#060609" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://smellme.parfum/" />
+  <meta property="og:title" content="Smell Me — Haute Parfumerie & Artisanal Fragrances" />
+  <meta property="og:description" content="An unforgettable presence. A scent that speaks before you do. Explore our handcrafted luxury extraits and interactive olfactory creations." />
+  <meta property="og:image" content="assets/images/perfume_hero_elixir.jpg" />
+
+  <!-- Favicon Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Brand",
+    "name": "Smell Me",
+    "description": "Artisanal luxury fragrance house specializing in high-concentration extraits de parfum.",
+    "url": "https://smellme.parfum",
+    "logo": "assets/images/perfume_hero_elixir.jpg",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Fluid Glowing Background Orbs -->
+  <div class="ambient-orbs-container" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+    <div class="ambient-orb ambient-orb-4"></div>
+    <div class="ambient-orb ambient-orb-5"></div>
+  </div>
+
+  <!-- Ambient Golden Dust & Mist Particle Canvas -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Smell Me Home">
+        <span class="brand-name">Smell Me</span>
+        <span class="brand-sub">Haute Parfumerie</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#collection" class="nav-link">Creations</a></li>
+          <li><a href="#pyramid" class="nav-link">Olfactory Pyramid</a></li>
+          <li><a href="#layering" class="nav-link">Layering Studio</a></li>
+          <li><a href="#heritage" class="nav-link">Craftsmanship</a></li>
+          <li><a href="#reviews" class="nav-link">Connoisseurs</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities -->
+      <div class="nav-actions">
+        <!-- Interactive Sound Atmosphere Toggle -->
+        <button type="button" class="nav-btn-icon sound-toggle-btn" id="sound-toggle-btn" title="Toggle Sensory Sound Experience">
+          <span class="sound-icon">🔊</span>
+          <span class="sound-text">Sound On</span>
+        </button>
+
+        <!-- Scent Finder Quiz Button -->
+        <button type="button" class="nav-btn-icon" data-action="open-quiz" title="Take Fragrance Diagnostic Quiz">
+          <span>✨ Scent Finder</span>
+        </button>
+
+        <!-- Cart Bag Button -->
+        <button type="button" class="nav-btn-icon cart-toggle-btn" data-action="open-cart" title="View Luxury Shopping Bag">
+          <span>🛍️ Bag</span>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-btn" id="hamburger-btn" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav">
+    <a href="#collection" class="nav-link">Creations</a>
+    <a href="#pyramid" class="nav-link">Olfactory Pyramid</a>
+    <a href="#layering" class="nav-link">Layering Studio</a>
+    <a href="#heritage" class="nav-link">Craftsmanship</a>
+    <a href="#reviews" class="nav-link">Connoisseurs</a>
+    <button type="button" class="btn-primary" data-action="open-quiz" style="width: 100%; margin-top: 10px;">
+      <span>Find Your Signature Smell</span>
+    </button>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         1. HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal-on-scroll is-revealed">
+          <span class="hero-brand-tag">
+            <span>⚜️</span> Private Haute Collection N°1
+          </span>
+          <h1 class="hero-title">
+            An Unforgettable Presence. A Scent That <span class="gold-text">Speaks Before You Do</span>.
+          </h1>
+          <p class="hero-description">
+            Welcome to <strong class="gold-text">Smell Me</strong>. Hand-poured in Grasse, France with rare botanical essences, 30% extrait concentration, and hypnotic sillage that leaves an intoxicating trail wherever you tread.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#collection" class="btn-primary">
+              <span>Explore Collection</span>
+            </a>
+            <button type="button" class="btn-secondary" data-action="open-quiz">
+              <span>Take Scent Finder Quiz ✨</span>
+            </button>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat-item">
+              <span class="stat-value">30%</span>
+              <span class="stat-label">Extrait Oil Density</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-value">14h+</span>
+              <span class="stat-label">Skin Longevity</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Cruelty-Free & Ethical</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Bottle Showcase Stage -->
+        <div class="hero-stage reveal-on-scroll is-revealed" id="hero-stage">
+          <div class="hero-halo-glow"></div>
+          <div class="hero-bottle-wrap" id="hero-bottle-wrap">
+            <img 
+              src="assets/images/perfume_hero_elixir.jpg" 
+              alt="Smell Me Élixir Noir Perfume Bottle" 
+              class="hero-flacon-img"
+              id="hero-3d-bottle"
+            />
+            
+            <!-- Interactive Spray Trigger Card -->
+            <div class="hero-spray-trigger-card" id="hero-spray-trigger" role="button" tabindex="0">
+              <div class="spray-icon-pulse">💨</div>
+              <div class="spray-text-group">
+                <strong>Spray to Experience</strong>
+                <span>Click for olfactory mist & sound</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         2. INTERACTIVE QUIZ PROMO BANNER
+         ========================================== -->
+    <section class="section" style="padding: 40px 0; background: rgba(212, 175, 55, 0.03); border-y: 1px solid var(--border-glass);">
+      <div class="container">
+        <div class="glass-panel reveal-on-scroll" style="padding: 38px 44px; display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+          <div>
+            <span class="section-eyebrow">Personalized Diagnosis</span>
+            <h3 style="font-size: 1.85rem; margin-bottom: 6px;">Unsure which creation defines your aura?</h3>
+            <p style="font-size: 0.95rem;">Answer 4 sensory questions to uncover your bespoke signature accord.</p>
+          </div>
+          <button type="button" class="btn-primary" data-action="open-quiz">
+            <span>Start Scent Finder Quiz →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. SIGNATURE COLLECTION (CATALOG)
+         ========================================== -->
+    <section class="section" id="collection">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Artisanal Flacons</span>
+          <h2 class="section-title">The <span class="gold-text">Smell Me</span> Universe</h2>
+          <p class="section-subtitle">
+            Every fragrance is a masterwork of rare natural resins, sun-drenched florals, and opulent woods crafted without compromise.
+          </p>
+        </div>
+
+        <!-- Scent Family Filter Tabs -->
+        <div class="category-filter-bar reveal-on-scroll" id="category-tabs-mount"></div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="fragrance-grid" id="fragrance-grid-mount"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. THE OLFACTORY PYRAMID EXPLORER
+         ========================================== -->
+    <section class="section section-translucent" id="pyramid">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Sensory Anatomy</span>
+          <h2 class="section-title">The <span class="gold-text">Olfactory Pyramid</span></h2>
+          <p class="section-subtitle">
+            Fragrance unfolds like a three-act symphony. Click any note below to explore its origin, olfactory characteristics, and matching creations.
+          </p>
+        </div>
+
+        <!-- Interactive Pyramid Component -->
+        <div id="olfactory-pyramid-mount"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. BESPOKE LAYERING STUDIO
+         ========================================== -->
+    <section class="section" id="layering">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Custom Alchemy</span>
+          <h2 class="section-title">The <span class="gold-text">Layering Studio</span></h2>
+          <p class="section-subtitle">
+            Master the French art of <em>Scent Layering</em>. Combine a base foundation flacon with a top accent accord to compose a personalized olfactory signature.
+          </p>
+        </div>
+
+        <!-- Interactive Layering Bar Mount -->
+        <div id="layering-studio-mount" class="reveal-on-scroll"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. CRAFTSMANSHIP & ETHOS
+         ========================================== -->
+    <section class="section section-translucent" id="heritage">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Haute Parfumerie</span>
+          <h2 class="section-title">Crafted with <span class="gold-text">Pure Devotion</span></h2>
+          <p class="section-subtitle">
+            We reject mass production. Each bottle of Smell Me is aged for four months in dark temperature-controlled cellars to achieve absolute chemical equilibrium.
+          </p>
+        </div>
+
+        <div class="craftsmanship-grid">
+          <div class="craft-card reveal-on-scroll stagger-1">
+            <span class="craft-icon">🌹</span>
+            <h4 class="craft-title">Grasse Centifolia Roses</h4>
+            <p class="craft-desc">
+              Hand-harvested at dawn in Grasse, France during the month of May when essential oils reach peak olfactory concentration.
+            </p>
+          </div>
+
+          <div class="craft-card reveal-on-scroll stagger-2">
+            <span class="craft-icon">🪵</span>
+            <h4 class="craft-title">Sustainably Aged Oud</h4>
+            <p class="craft-desc">
+              Ethically sourced Assamese and Cambodian agarwood, aged naturally for over a decade to impart an unmatched smoky sweetness.
+            </p>
+          </div>
+
+          <div class="craft-card reveal-on-scroll stagger-3">
+            <span class="craft-icon">💎</span>
+            <h4 class="craft-title">Faceted French Crystal</h4>
+            <p class="craft-desc">
+              Heavy bespoke crystal flacons fitted with precision micro-atomizers that deliver a fine, weightless cloud of fragrance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. CUSTOMER TESTIMONIALS & REVIEWS
+         ========================================== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-eyebrow">Sensory Impressions</span>
+          <h2 class="section-title">Words from <span class="gold-text">Connoisseurs</span></h2>
+          <p class="section-subtitle">
+            Read authentic impressions from collectors and fragrance connoisseurs across the globe.
+          </p>
+        </div>
+
+        <!-- Reviews Mount -->
+        <div id="reviews-slider-mount"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         8. VIP PRIVATE VAULT NEWSLETTER
+         ========================================== -->
+    <section class="vip-vault-section" id="vip-vault">
+      <div class="container">
+        <div class="vip-vault-box reveal-on-scroll">
+          <span class="section-eyebrow">Private Circle Access</span>
+          <h2 class="vip-vault-title">Unlock the <span class="gold-text">Private Vault</span></h2>
+          <p class="vip-vault-sub">
+            Join the Smell Me inner circle for private reserve allocations, limited release notifications, and receive an instant 15% VIP discount code.
+          </p>
+
+          <form id="vip-vault-form" class="vip-form-wrap">
+            <input 
+              type="email" 
+              class="vip-input" 
+              placeholder="Enter your private email address..." 
+              required 
+              aria-label="Email address for VIP membership"
+            />
+            <button type="submit" class="btn-primary">
+              <span>Grant Access</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       SITE FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid reveal-on-scroll">
+        <div>
+          <a href="#hero" class="brand-logo" style="margin-bottom: 8px;">
+            <span class="brand-name">Smell Me</span>
+            <span class="brand-sub">Haute Parfumerie</span>
+          </a>
+          <p class="footer-brand-p">
+            An independent luxury fragrance house dedicated to the fine art of olfactory composition, rare botanicals, and high-concentration extraits.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>The House</h5>
+          <ul class="footer-links">
+            <li><a href="#collection">Our Creations</a></li>
+            <li><a href="#pyramid">The Olfactory Pyramid</a></li>
+            <li><a href="#layering">Bespoke Layering Bar</a></li>
+            <li><a href="#heritage">Artisanal Heritage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Client Care</h5>
+          <ul class="footer-links">
+            <li><a href="#" data-action="open-quiz">Scent Diagnostic</a></li>
+            <li><a href="#" data-action="open-cart">Your Luxury Bag</a></li>
+            <li><a href="#">Certificate of Authenticity</a></li>
+            <li><a href="#">White-Glove Shipping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Private Salons</h5>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-secondary);">18 Place Vendôme, Paris</span></li>
+            <li><span style="color: var(--text-secondary);">740 Madison Ave, New York</span></li>
+            <li><span style="color: var(--text-secondary);">Via Montenapoleone, Milan</span></li>
+            <li><span style="color: var(--gold-light);">concierge@smellme.parfum</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Smell Me Haute Parfumerie. All Rights Reserved.</p>
+        <p>Handcrafted in Grasse & Paris • Compliant with IFRA Standards</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODALS & DRAWERS
+       ========================================== -->
+
+  <!-- Scent Finder Quiz Modal -->
+  <div class="modal-backdrop" id="quiz-modal" role="dialog" aria-modal="true" aria-labelledby="quiz-modal-title">
+    <div class="quiz-modal-window">
+      <button type="button" class="modal-close" aria-label="Close Quiz">✕</button>
+      <div class="quiz-content-body"></div>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-backdrop" id="quickview-modal" role="dialog" aria-modal="true">
+    <div class="quickview-modal-window">
+      <button type="button" class="modal-close" aria-label="Close Quick View">✕</button>
+      <div class="quickview-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Express Checkout Modal -->
+  <div class="modal-backdrop" id="checkout-modal" role="dialog" aria-modal="true">
+    <div class="checkout-modal-window">
+      <button type="button" class="modal-close" aria-label="Close Checkout">✕</button>
+      <div class="checkout-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Cart Slideout Drawer -->
+  <div class="cart-backdrop-overlay" id="cart-backdrop"></div>
+  <aside class="cart-slideout-drawer" id="cart-drawer" aria-label="Shopping Bag">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">Your Olfactory Bag</h3>
+      <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close Bag">✕</button>
+    </div>
+    <div class="cart-drawer-body" id="cart-items-container"></div>
+    <div class="cart-drawer-footer" id="cart-footer-mount"></div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status">
+    <span class="toast-icon">✨</span>
+    <span class="toast-text">Added to Bag</span>
+  </div>
+
+  <!-- Application Logic Modules -->
+  <script type="module" src="js/data.js"></script>
+  <script type="module" src="js/audio.js"></script>
+  <script type="module" src="js/particles.js"></script>
+  <script type="module" src="js/cursor.js"></script>
+  <script type="module" src="js/quiz.js"></script>
+  <script type="module" src="js/layering.js"></script>
+  <script type="module" src="js/cart.js"></script>
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>
